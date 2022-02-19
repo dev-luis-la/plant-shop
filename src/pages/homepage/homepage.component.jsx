@@ -4,9 +4,9 @@ import './homepage.style.scss';
 
 
 
-const HomePage = () => (
+const HomePage = ( ) => (
     <div className="homepage">
-    <Directory/>
+    <Directory />
     </div>
 )
 
