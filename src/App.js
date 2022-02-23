@@ -11,12 +11,12 @@ function App() {
   return (
     <div >
     <Header/>
-    <switch>
+    <Switch>
        <Route exact path='/' component={HomePage}/>
         <Route  path='/shop' component={ShopPage}/>
         <Route  path='/signin' component={Form}/>
         
-    </switch>
+    </Switch>
    
     </div>
   );
