@@ -22,8 +22,20 @@
       .option {
         padding: 10px 15px;
         text-decoration: none;
-    
+        cursor: pointer;
     }
+    }
+
+    .signOut{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: x-large;
+      color: #909cac;
+      cursor: pointer;
+
     }
   }
+
+
   

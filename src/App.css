@@ -8,3 +8,7 @@ a{
     color: #909cac;
     font-size: x-large;
 }
+
+*{
+    box-sizing: border-box;
+}
