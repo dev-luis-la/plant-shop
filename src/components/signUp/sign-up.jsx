@@ -29,8 +29,8 @@ class SignUp extends React.Component{
             return;
         }
         try {
-            const{ user} = await auth.createUserWithEmailAndPassword(email, password);
-             await  createUserProfileDocument(user, {displayName})
+            const{ user } = await auth.createUserWithEmailAndPassword(email, password);
+             await  createUserProfileDocument(user, {displayName});
              this.setState({
                 displayName: '',
                 email: '',
@@ -39,7 +39,7 @@ class SignUp extends React.Component{
             });
         } catch (error) {
             console.log('error', error)
-        };
+        }
     };
 
     handleChanges = event =>{
@@ -61,30 +61,31 @@ class SignUp extends React.Component{
                      onChange={this.handleChanges}
                      label='display Name'
                      required
-                     ></FormInput>
+                     />
                     <FormInput
                      type='email'
                      name='email'
                      value={email}
                      onChange={this.handleChanges}
-                     label='email'
+                     label='Email'
                      required
-                     ></FormInput>
+                     />
                      <FormInput
                      type='password'
                      name='password'
-                     value={displayName}
+                     value={password}
                      onChange={this.handleChanges}
                      label='password'
-                     required>
-                     </FormInput>
+                     required/>
                      <FormInput
                      type='password'
-                     name='ConfirmPassword'
+                     name='confirmPassword'
                      value={confirmPassword}
                      onChange={this.handleChanges}
                      label='Confirm Password'
-                     required></FormInput>
+                     required>
+
+                     </FormInput>
 
                 <CustomButon type="submit">Sign up</CustomButon>
                 </form> 
