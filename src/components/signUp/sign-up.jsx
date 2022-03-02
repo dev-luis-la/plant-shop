@@ -1,10 +1,7 @@
 import React from "react";
-
 import FormInput from "../form-input/form-input";
 import CustomButon from "../custom-btn/custom-btn";
-
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
-
 import './sign-up.scss';
 import { async } from "@firebase/util";
 
