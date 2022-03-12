@@ -2,6 +2,7 @@ import firebase from  'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import { initializeApp } from "firebase/app";
+
 const config ={
         apiKey: "AIzaSyBtNS3VdU6ZDe2iHmfD59UXi-qI4a6doR8",
         authDomain: "plant-db-66a26.firebaseapp.com",
