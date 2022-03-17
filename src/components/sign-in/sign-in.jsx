@@ -4,7 +4,7 @@ import CustomButon from "../custom-btn/custom-btn";
 import './sign-in.styles.scss'
 import { auth, sigInWithGoogle } from '../../firebase/firebase.utils'
 
-class SiginIn extends React.Component{
+class SignIn extends React.Component{
     constructor(props){
         super(props);
 
@@ -64,4 +64,4 @@ class SiginIn extends React.Component{
     }
 }
 
-export default SiginIn;
+export default SignIn;
