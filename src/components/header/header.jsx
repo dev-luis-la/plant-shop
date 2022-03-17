@@ -19,19 +19,19 @@ const Header = ({ currentUser}) =>(
                 Contact
             </Link>
             {currentUser ?(
-                <div className="signOut" onClick={() => auth.signOut()}>Sign out</div>
+                <div className="signOut" onClick={() => auth.signOut()}>Sign Out</div>
             )
             :(
-             <Link className="option" to='/signin'>Sign in</Link>
+             <Link className="option" to='/signin'>Sign In</Link>
             )}
         </div>
     </div>
 )
 
 
- const mapStateToProps = ()  => ({
-     
+ const mapStateToProps =  state => ({
+    currentUser:  state.user.currentUser
  })
 
 
-export default connect()(Header);
+export default connect(mapStateToProps)(Header);
